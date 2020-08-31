@@ -1,4 +1,4 @@
-package sample;
+package de.yugimuo;
 
 public class Controller {
 }

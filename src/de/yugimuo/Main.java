@@ -1,5 +1,7 @@
-package sample;
+package de.yugimuo;
 
+import de.yugimuo.websocket.Client;
+import de.yugimuo.websocket.Server;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,5 +21,11 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+        Client reciver = new Client();
+        Server server = new Server();
+        String name = "Share programm";
+        String version;
+        version = "v1.0 ";
+        Main.launch();
     }
 }
