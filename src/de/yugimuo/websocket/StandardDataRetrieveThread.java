@@ -33,7 +33,10 @@ public class StandardDataRetrieveThread {
                 try {
                     String response = "";
                     while (( response = in.readLine() ) != null) {
-
+                        if(response.startsWith("File:")){
+                            LOG("Receiving file... " + response, Logger.LoggerType.INFO);
+                            continue;
+                        }
                         if (response.equals("hello server")) {
                             out.println("hello client");
                         } else {
